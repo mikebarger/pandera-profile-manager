@@ -1,0 +1,94 @@
+<header class="navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <img id="logo" src="assets/images/pandera-logo.png"/>
+            </div>
+            <div class="col-sm-4 text-center">
+                <span class="pand-title-text">CONSULTANT PROFILE</span>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-sm-12 text-right pand-consultant-name">
+                        {{ profile.consultantName }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-right pand-consultant-title">
+                        {{ profile.jobTitle }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 pand-tab pand-tab-left"
+            ng-class="{ 'pand-tab-active': profile.selectedTab == 'bio'}"
+            ng-click="profile.selectTab('bio')">
+            <i class="fa fa-user"></i> Resource Bio
+        </div>
+        <div class="col-sm-4 pand-tab pand-tab"
+            ng-class="{ 'pand-tab-active': profile.selectedTab == 'experience'}"
+            ng-click="profile.selectTab('experience')">
+            <i class="fa fa-file-text"></i> Summary of Experience
+        </div>
+        <div class="col-sm-4 pand-tab pand-tab-right"
+            ng-class="{ 'pand-tab-active': profile.selectedTab == 'skills'}"
+            ng-click="profile.selectTab('skills')">                     
+            <i class="fa fa-table"></i> Skills Matrix
+        </div>
+    </div>
+    <div id="bio" 
+         ng-show="profile.selectedTab == 'bio'"
+    >
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Consultant Name: {{ profile.consultantName }}
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Competency Center: {{ profile.compentencyCenter }}
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Job Title: {{ profile.jobTitle }} 
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Location: {{ profile.location }}
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Area(s) of Expertise: {{ profile.areasOfExpertise }}
+            </div>
+            <div class="col-sm-8"></div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Education: {{ profile.education }}
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Certifications: {{ profile.certifications }} 
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Years of Experience: {{ profile.yearsOfExperience }}
+            </div>
+        </div>
+        <div class="row pand-bio-row">
+            <div class="col-sm-12">
+                Bio / Overview: {{ profile.overview }}
+            </div>
+        </div>
+    </div>
+</div>

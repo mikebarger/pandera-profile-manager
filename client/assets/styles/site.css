@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 73px;
+}
+
+.navbar-fixed-top {
+    height: 60px;
+    padding-top: 2px;
+}
+
+#logo {
+    height: 55px;
+    width: 279px;
+}
+
+.pand-orange {
+    color: #f36624;
+}
+
+.pand-grey {
+    color: #f0f1f2;
+}
+
+.pand-back-grey {
+    background-color: #f0f1f2;
+}
+
+.pand-title-text {
+    line-height: 60px;
+    font-size: 1.2em;
+}
+
+.pand-consultant-name {
+    color: #000;
+    font-size: 1.3em;
+    background-color: #f0f1f2;
+    padding: 4px 12px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;    
+}
+
+.pand-consultant-title {
+    color: #000;
+    font-size: 1em;
+    background-color: #f0f1f2;
+    padding: 4px 12px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.pand-tab {
+    background-color: #f0f1f2;
+    color: #000;
+    text-align: center;
+    font-size: 1.2em;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pand-tab-left {
+    border-left: none;
+}
+
+.pand-tab-right {
+    border-right: none;
+}
+
+.pand-tab-active {
+    background-color: #f36624;
+    color: #fff;
+}
+
+.pand-bio-row {
+    background-color: #f0f1f2;
+    border-left: 4px solid #f36624;
+    padding: 10px 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
